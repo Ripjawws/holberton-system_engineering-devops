@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R a=,go+rx,u+rwx ~/holberton-system_engineering-devops
+chmod -R a=,+rwX ~/holberton-system_engineering-devops
