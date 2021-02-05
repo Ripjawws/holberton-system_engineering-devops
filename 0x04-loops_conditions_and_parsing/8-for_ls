@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Display files
-
-for i in pwd; do
-    ls  | cut -d "-" -f2
+# Display files in pwd
+for i in *; do
+    echo "$i" | cut -d "-" -f2
 done
