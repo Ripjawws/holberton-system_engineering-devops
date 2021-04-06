@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# Connecting to ssh with private key
+#
+ssh-keygen -t rsa -b 4096 -f holberton -N betty
