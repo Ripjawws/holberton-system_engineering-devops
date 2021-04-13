@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Configure a server with a custom header
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+sudo chown -R "$USER":"$USER" /var/www/
+sudo sed -i '/# First attempt to serve request as file, then/a add_header X-Served-By $hostname;\n' /etc/nginx/sites-available/default
+sudo service nginx restart
